@@ -1,0 +1,41 @@
+<mvc:View
+	controllerName="sap.ui.demo.basicTemplate.controller.OverviewList"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	displayBlock="true"
+	xmlns:sapform="sap.ui.layout.form"
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	>
+	<Page
+			title="{i18n>title}"
+			busy="false"
+			>
+		<content>
+
+			<List
+					id="csnList"
+					headerText="headerText"
+					class="sapUiResponsiveMargin"
+					width="auto"
+					items="{path: 'csn>/CSNSet'}" >
+	      <headerToolbar>
+	         <Toolbar>
+	            <Title text="{i18n>invoiceListTitle}"/>
+	            <ToolbarSpacer/>
+	            <SearchField width="50%" search="onFilterInvoices" />
+	         </Toolbar>
+	      </headerToolbar>
+				<items>
+					<ObjectListItem
+				    title="{csn>Zoabh}"
+						press="onPressItem"
+						type="Navigation"
+						/>
+				</items>
+			</List>
+		</content>
+	</Page>
+
+</mvc:View>
