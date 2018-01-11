@@ -18,20 +18,29 @@
 			<content>
 			  <sapform:Form editable="true" id="csn-form" >
 			    <sapform:layout>
-			      <sapform:ResponsiveGridLayout />
+			      <sapform:ResponsiveGridLayout singleContainerFullSize="true"/>
 			    </sapform:layout>
 			    <sapform:formContainers>
 			      <sapform:FormContainer expandable="true">
-			        <sapform:title>
-			          <core:Title text="title" />
-			        </sapform:title>
+			        <sapform:toolbar>
+			          <Toolbar>
+									<Title id="Title1" text="Address" level="H4" titleStyle="H4"/>
+									<ToolbarSpacer />
+									<Button icon="sap-icon://settings"/>
+									<Button icon="sap-icon://drop-down-list" />
+								</Toolbar>
+			        </sapform:toolbar>
 			        <sapform:formElements>
 			          <sapform:FormElement>
 			            <sapform:label>
 			              <Label text="{csn>/#CSN/Vkorg/@sap:label}" labelFor="Vkorg" />
 			            </sapform:label>
 			            <sapform:fields>
-			              <Input id="Vkorg" value="{csn>Vkorg}" />
+			              <Input id="Vkorg" value="{csn>Vkorg}">
+											<layoutData>
+												<layout:GridData span="L4" />
+											</layoutData>
+										</Input>
 			            </sapform:fields>
 			          </sapform:FormElement>
 			          <sapform:FormElement>
@@ -42,31 +51,21 @@
 			              <Input id="Zoabh" value="{csn>Zoabh}" />
 			            </sapform:fields>
 			          </sapform:FormElement>
+			          <sapform:FormElement>
+			            <sapform:label>
+			              <Label text="{csn>/#CSN/Zcydwbh/@sap:label}" labelFor="Zcydwbh" />
+			            </sapform:label>
+			            <sapform:fields>
+			              <Input id="Zcydwbh" value="{csn>Zcydwbh}" />
+			            </sapform:fields>
+			          </sapform:FormElement>
+			          <sapform:FormElement>
+			            <sapform:fields>
+			              <Button id="submit" text="Update" press="onUpdate" />
+			            </sapform:fields>
+			          </sapform:FormElement>
 			        </sapform:formElements>
 			      </sapform:FormContainer>
-				      <sapform:FormContainer expandable="true">
-				        <sapform:title>
-				          <core:Title text="title" />
-				        </sapform:title>
-				        <sapform:formElements>
-				          <sapform:FormElement>
-				            <sapform:label>
-				              <Label text="{csn>/#CSN/Onum/@sap:label}" labelFor="Onum" />
-				            </sapform:label>
-				            <sapform:fields>
-				              <Input id="Onum" value="{csn>Onum}" />
-				            </sapform:fields>
-				          </sapform:FormElement>
-				          <sapform:FormElement>
-				            <sapform:label>
-				              <Label text="{csn>/#CSN/Zcydwbh/@sap:label}" labelFor="Zcydwbh" />
-				            </sapform:label>
-				            <sapform:fields>
-				              <Input id="Zcydwbh" value="{csn>Zcydwbh}" />
-				            </sapform:fields>
-				          </sapform:FormElement>
-				        </sapform:formElements>
-				      </sapform:FormContainer>
 			    </sapform:formContainers>
 			  </sapform:Form>
       </content>

@@ -11,3 +11,9 @@ Getting the server running on your local machine takes only a few steps:
 3. start the server - `node server.js`
 
 Here, the resources folder is located in F: Drive. The OpenUI5 SDK or Runtime needs to be mounted to F: Drive by ISO mounting tool and we can access like this, F:\resources.
+
+## How to use
+
+You will be not available run this project, even me.
+Because the OData Service is built in a private SAP Server.
+But you can have a look at about the configurations for OData Services and how to use it to show for users.
