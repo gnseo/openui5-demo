@@ -36,7 +36,8 @@
 			              <Label text="{csn>/#CSN/Vkorg/@sap:label}" labelFor="Vkorg" />
 			            </sapform:label>
 			            <sapform:fields>
-			              <Input id="Vkorg" value="{csn>Vkorg}">
+			              <Input id="Vkorg" value="{csn>Vkorg}"
+														maxLength="{path: 'csn>/#CSN/Vkorg/maxLength', formatter: 'parseInt'}">
 											<layoutData>
 												<layout:GridData span="L4" />
 											</layoutData>
@@ -48,7 +49,8 @@
 			              <Label text="{csn>/#CSN/Zoabh/@sap:label}" labelFor="Zoabh" />
 			            </sapform:label>
 			            <sapform:fields>
-			              <Input id="Zoabh" value="{csn>Zoabh}" />
+			              <Input id="Zoabh" value="{csn>Zoabh}"
+														maxLength="{path: 'csn>/#CSN/Zoabh/maxLength', formatter: 'parseInt'}" />
 			            </sapform:fields>
 			          </sapform:FormElement>
 			          <sapform:FormElement>
@@ -56,12 +58,15 @@
 			              <Label text="{csn>/#CSN/Zcydwbh/@sap:label}" labelFor="Zcydwbh" />
 			            </sapform:label>
 			            <sapform:fields>
-			              <Input id="Zcydwbh" value="{csn>Zcydwbh}" />
+			              <Input id="Zcydwbh" value="{csn>Zcydwbh}"
+														maxLength="{path: 'csn>/#CSN/Zcydwbh/maxLength', formatter: 'parseInt'}" />
 			            </sapform:fields>
 			          </sapform:FormElement>
 			          <sapform:FormElement>
 			            <sapform:fields>
-			              <Button id="submit" text="Update" press="onUpdate" />
+			              <Button id="update" text="Update" press="onUpdate" />
+			              <Button id="create" text="Create" press="onCreate" />
+			              <Button id="delete" text="Delete" press="onDelete" />
 			            </sapform:fields>
 			          </sapform:FormElement>
 			        </sapform:formElements>

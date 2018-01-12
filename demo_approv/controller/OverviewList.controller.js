@@ -16,6 +16,7 @@ sap.ui.define([
 			const oModel = this.getOwnerComponent().getModel('csn')
 			const oMetaModel = oModel.getMetaModel()
 			oMetaModel.loaded().then(function(result){
+				console.log(oMetaModel)
       })
 		},
 

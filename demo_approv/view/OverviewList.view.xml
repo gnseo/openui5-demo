@@ -22,7 +22,7 @@
 					items="{path: 'csn>/CSNSet'}" >
 	      <headerToolbar>
 	         <Toolbar>
-	            <Title text="{i18n>invoiceListTitle}"/>
+	            <Title text="{i18n>csnListTitle}"/>
 	            <ToolbarSpacer/>
 	            <SearchField width="50%" search="onFilterInvoices" />
 	         </Toolbar>

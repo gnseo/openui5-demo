@@ -71,7 +71,8 @@
 				"dataSource": "csnService",
 				"settings": {
 					"defaultCountMode": "None",
-					"defaultBindingMode": "TwoWay"
+					"defaultBindingMode": "TwoWay",
+					"refreshAfterChange": "true"
 				}
 			}
 		},
