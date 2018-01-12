@@ -17,3 +17,6 @@ Here, the resources folder is located in F: Drive. The OpenUI5 SDK or Runtime ne
 You will be not available run this project, even me.
 Because the OData Service is built in a private SAP Server.
 But you can have a look at about the configurations for OData Services and how to use it to show for users.
+
+## Demo Video
+[Youtube link](https://youtu.be/7pABW8AF7Ss)
